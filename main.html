@@ -3,72 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agriculture</title>
+    <title>Agriculture Awareness</title>
     <style>
-       * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: Arial, sans-serif; background-color: #f9f9f9; color: #333; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-        /* Header Styling */
+        /* Header */
         .header {
             display: flex; justify-content: space-between; align-items: center;
             padding: 1.2rem 3rem;
-            background: #035305; color: white;
+            background: #2d5d34; color: white;
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
-        .header h1 { font-size: 1.8rem; font-weight: 700; cursor: pointer; }
+        .header h1 { font-size: 2rem; font-weight: 700; cursor: pointer; }
         .header nav a {
             color: white; text-decoration: none; margin: 0 1rem;
             font-weight: 600; transition: color 0.3s;
         }
         .header nav a:hover { color: #ffda79; }
-        .image-box {
-    position: relative;
-    background-color: greenyellow;
-    padding: 10px;
-    border-radius: 6px;
-}
 
-.image-box .para {
-    color: rgb(76, 5, 5);
-    font-size: 16px;
-    margin-right: 200px; /* Adjusted to allow space for the fixed image */
-}
+        /* Hero Section */
+        .hero-section {
+            display: flex; align-items: center; justify-content: space-between;
+            background-color: #cde9c3;
+            padding: 50px;
+            margin: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+        .hero-text {
+            flex: 1;
+            max-width: 500px;
+        }
+        .hero-text h2 {
+            color: #2d5d34;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .hero-text p {
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .hero-image img {
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+        }
 
-/* Button Styles */
-.styled-button {
-    display: block; /* Places the button on a new line */
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    align-items: center;
-}
+        /* Theme Selection */
+        .theme-selection {
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .theme-selection label {
+            font-weight: bold;
+            margin-right: 10px;
+            color: #2d5d34;
+            font-size: 18px;
+        }
+        .theme-selection select {
+            padding: 8px 12px;
+            border: 1px solid #4CAF50;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+            color: #333;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-.styled-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
+        /* Footer */
+        .footer {
+            background: #2d5d34;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
     </style>
 </head>
 <body>
+    <!-- Header -->
     <div class="header">
-        <h1>Awareness on Agriculture Methods</h1>
+        <h1>Agriculture Awareness</h1>
         <nav>
             <a href="#home">Home</a>
-            <a href="sustainable.html">Sustainable Agriculture</a>
-            <a href="govtsch.html">Government Schemes</a>
-            <a href="chems.html">Chemical Effects</a>
+            <a href="#sustainable">Sustainable Agriculture</a>
+            <a href="#schemes">Government Schemes</a>
+            <a href="#effects">Chemical Effects</a>
             <a href="#about">About</a>
         </nav>
     </div>
-    <div class="image-box">
-        <p class="para">Are you sure what you are eating is good for your health?<br></p>
-        <button onclick="scrollToSection('education')" class="styled-button">Themes</button>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="hero-text">
+            <h2>Are you sure what you're eating is good for your health?</h2>
+            <p>Learn about sustainable agriculture methods, organic farming, and how you can make a difference in your food choices for a healthier future. Join us in promoting eco-friendly farming practices that benefit everyone.</p>
+        </div>
+        <div class="hero-image">
+            <img src="your-image.jpg" alt="Agriculture Awareness">
+        </div>
+    </div>
+
+    <!-- Theme Selection -->
+    <div class="theme-selection">
+        <label for="themes">Select a theme:</label>
+        <select id="themes" name="themes">
+            <option value="organic">Organic Farming</option>
+            <option value="hydroponics">Hydroponics</option>
+            <option value="sustainable">Sustainable Agriculture</option>
+            <option value="permaculture">Permaculture</option>
+        </select>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Agriculture Awareness. All rights reserved.</p>
     </div>
 </body>
 </html>
