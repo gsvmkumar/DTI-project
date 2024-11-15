@@ -149,20 +149,21 @@
     <!-- Theme Selection -->
     <div class="theme-selection">
         <label for="themes">Select a theme:</label>
-        <select id="themes" name="themes">
+        <select id="themes" name="themes" onchange="navigateToPage()">
             <option value="">--Choose an option--</option>
             <option value="india.html">INDIA statistics</option>
             <option value="world.html">WORLD statistics</option>
         </select>
     </div>
+
     <script>
-    function navigateToPage() {
-        const selectedPage = document.getElementById("themes").value;
-        if (selectedPage) {
-            window.location.href = selectedPage; // Redirect to the selected page
+        function navigateToPage() {
+            const selectedPage = document.getElementById("themes").value;
+            if (selectedPage) {
+                window.location.href = selectedPage; // Redirect to the selected page
+            }
         }
-    }
-   </script>
+    </script>
     <!-- Footer -->
     <div class="footer">
         <p>&copy; 2024 Agriculture Awareness. All rights reserved.</p>
