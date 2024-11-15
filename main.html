@@ -62,12 +62,42 @@
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
         }
 
+        /* About the Team Section */
+        #about {
+            background-color: #f9f9f9;
+            padding: 40px 20px;
+        }
+        #about h2 {
+            text-align: center;
+            color: #2d5d34;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        #about p {
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* Footer */
+        .footer {
+            background: #2d5d34;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: auto; /* Pushes footer to the bottom */
+        }
+
         /* Theme Selection */
         .theme-selection {
             margin-top: 30px;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin-bottom: 30px; /* Add some space from the bottom */
         }
         .theme-selection label {
             font-weight: bold;
@@ -83,15 +113,6 @@
             color: #333;
             font-size: 16px;
             cursor: pointer;
-        }
-
-        /* Footer */
-        .footer {
-            background: #2d5d34;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: auto; /* Pushes footer to the bottom */
         }
     </style>
 </head>
@@ -117,6 +138,12 @@
         <div class="hero-image">
             <img src="images/main.jpg" alt="Agriculture Awareness">
         </div>
+    </div>
+
+    <!-- About the Team Section -->
+    <div id="about">
+        <h2>About the Team</h2>
+        <p>Our team consists of passionate individuals who are committed to bringing awareness about the importance of sustainable agriculture. We believe in promoting eco-friendly farming practices and organic solutions that help preserve the environment while ensuring the health of future generations.</p>
     </div>
 
     <!-- Theme Selection -->
